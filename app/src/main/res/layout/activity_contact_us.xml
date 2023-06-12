@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutbtmsheet"
+    android:background="@drawable/bottomsheetlayout"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD5901"
+        android:id="@+id/toolbarAddress">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:id="@+id/arrowContactBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Contact Us"
+            android:textSize="27sp"
+            android:textColor="@color/white1"/>
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textColor="#FD5901"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gmailAddress"
+        android:inputType="textEmailAddress"
+        android:text="henrycharles360@gmail.com"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email Address"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textColor="#FD5901"
+
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SubjectAddress"
+        android:inputType="textEmailSubject"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email Address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="#FD5901"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Message"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="start"
+        android:inputType="text"
+        android:lines="10"
+        android:hint="Type Your Message Here"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="26dp"
+        android:text="Send"
+        android:textSize="26sp"
+        android:textColor="@color/white1"
+        android:backgroundTint="#FD5901"
+        android:id="@+id/btnSendMessage"/>
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity">
+
+        <RelativeLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/relative_layout">
+            <TextView
+                android:id="@+id/txtuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:layout_marginStart="5dp"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txtuser"
+                android:layout_marginRight="4dp"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:text="Mail"
+                android:layout_marginStart="5dp"
+                android:id="@+id/txtprofile"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_shopping_cart"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:id="@+id/imgCart"
+                android:layout_marginEnd="6dp"
+                android:layout_alignWithParentIfMissing="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtprofile"
+                android:text="Get All Items of your Choice Here With Us"
+                android:layout_marginTop="7dp"
+                android:id="@+id/txtInfo"
+                android:padding="3dp"/>
+
+
+        </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relative_layout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_layout">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/searchView"
+            android:background="@drawable/searchview"
+            app:queryHint="Search Here....."
+            app:iconifiedByDefault="false"
+            android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchView"
+            android:id="@+id/cat"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cat"
+            android:id="@+id/horizontal"
+            android:layout_margin="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAll"
+                    android:text="All"
+                    android:textColor="@color/white1"
+                    android:textStyle="normal"
+                    android:backgroundTint="#FD5901"
+                    android:textSize="12sp"
+                    android:padding="6dp"
+                    android:layout_margin="6dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnElect"
+                    android:text="Electronics"
+                    android:backgroundTint="#FD5901"
+                    android:textStyle="normal"
+                    android:textColor="@color/white1"
+                    android:textSize="12sp"
+                    android:padding="6dp"
+                    android:layout_margin="6dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnjewelrey"
+                    android:text="Jewelrey"
+                    android:textStyle="normal"
+                    android:backgroundTint="#FD5901"
+                    android:textSize="12sp"
+                    android:textColor="@color/white1"
+                    android:padding="6dp"
+                    android:layout_margin="6dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnMW"
+                    android:text="Men Wear"
+                    android:textStyle="normal"
+                    android:backgroundTint="#FD5901"
+                    android:textSize="12sp"
+                    android:textColor="@color/white1"
+                    android:padding="6dp"
+                    android:layout_margin="6dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnLW"
+                    android:text="Ladies Wear"
+                    android:textStyle="normal"
+                    android:textSize="12sp"
+                    android:textColor="@color/white1"
+                    android:padding="6dp"
+                    android:layout_margin="6dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view"
+            android:layout_below="@id/horizontal"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:padding="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_view"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:text="Products For You"
+            android:layout_marginStart="6dp"
+            android:textStyle="bold"
+            android:id="@+id/recom"/>
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recom"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            android:padding="3dp"
+            android:id="@+id/recycler_view2"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        app:menu="@menu/bottomnavigate"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

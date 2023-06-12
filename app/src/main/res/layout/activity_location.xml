@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD5901"
+        android:id="@+id/toolbarLocatiom">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:id="@+id/arrowLocationBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Select Your Location"
+            android:textSize="27sp"
+            android:textColor="@color/white1"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/gps"
+            android:src="@drawable/ic_baseline_add_location_24"
+            android:backgroundTint="#FD5901"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarLocatiom"
+        android:orientation="vertical"
+        android:id="@+id/locatLineaer"
+        android:layout_marginTop="4dp"
+        android:padding="4dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+           android:layout_margin="2dp"
+            android:hint="Country"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_location"
+            android:drawablePadding="2dp"
+
+            android:id="@+id/country"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_margin="2dp"
+            android:hint="State"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_location"
+            android:drawablePadding="2dp"
+
+            android:id="@+id/State"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_margin="5dp"
+            android:hint="City"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_location"
+            android:drawablePadding="2dp"
+
+            android:id="@+id/City"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_margin="5dp"
+            android:hint="Complete Address"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_location"
+            android:drawablePadding="2dp"
+
+            android:id="@+id/locAddress"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locatLineaer"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progressBarLocate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarLocate"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:text="Save"
+        android:textColor="@color/white1"
+        android:id="@+id/locSafe"/>
+</RelativeLayout>

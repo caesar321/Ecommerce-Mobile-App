@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/cartimage"/>
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/string_title1"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/image1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="A platform for buying an ordering of commodity from the comfort of your home "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

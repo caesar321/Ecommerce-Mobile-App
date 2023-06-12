@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutbtmsheet"
+    android:background="@drawable/bottomsheetlayout"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Contact Us"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:textSize="22sp"
+    android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gmailAddress"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email Address"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SubjectAddress"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email Address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Message"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="start"
+        android:lines="10"
+        android:hint="Type Your Message Here"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="26dp"
+        android:text="Send"
+        android:textSize="26sp"
+        android:id="@+id/btnSendMessage"/>
+</LinearLayout>

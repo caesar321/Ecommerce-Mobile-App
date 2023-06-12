@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="2dp">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    app:cardCornerRadius="4dp"
+    android:elevation="3dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            android:id="@+id/CTimage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/CTimage"
+            android:text="Product Name"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="7dp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:id="@+id/CTproductName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CTproductName"
+            android:text="50"
+            android:layout_toRightOf="@id/CTimage"
+            android:layout_marginStart="4dp"
+                android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FD5901"
+            android:layout_marginTop="16dp"
+            android:id="@+id/CTPrice"/>
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_below="@id/CTproductName"
+           android:src="@drawable/ic_baseline_delete_24"
+           android:layout_marginTop="16dp"
+           android:id="@+id/delete"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

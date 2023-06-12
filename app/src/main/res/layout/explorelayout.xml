@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:elevation="12dp"
+    app:cardCornerRadius="15dp"
+    android:padding="3dp"
+    app:cardElevation="5dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:padding="3dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="5dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:scaleType="fitCenter"
+            android:id="@+id/exploreImg"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:padding="4dp">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Product Name Here"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="22sp"
+               android:marqueeRepeatLimit="marquee_forever"
+               android:maxLines="1"
+               android:id="@+id/exploreText"/>
+           <ToggleButton
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:textOff=""
+               android:textOn=""
+               android:background="@drawable/toggle_selector"
+               android:layout_below="@id/exploreText"
+               android:layout_marginTop="3dp"
+               android:id="@+id/togglebtn"/>
+       </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="7dp"
+    android:elevation="4dp"
+    android:id="@+id/cardViewForClick"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/user"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/productname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="3dp"
+                android:text="Gucci Wristwatch"
+                android:maxLines="1"
+                android:layout_marginStart="3dp"
+               android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/productprice"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="3dp"
+                android:text="$100.00"
+                android:maxLines="1"
+                android:textColor="#FD5901"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="3dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
